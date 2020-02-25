@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map of Locations</title>
+    <style>
+        body {
+            background: url(https://i.pinimg.com/originals/4e/af/1f/4eaf1fd1e1963085158baf21cbb1b5b9.jpg) no-repeat;
+            -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+            -o-background-size: 100%;
+            background-size: 100%;
+            }
+      </style>
+</head>
+<body>
+    <div style="margin-top: 20%;margin-left: -5%;">
+    <form method="POST" action="" style="text-align:center">
+        {{ form.hidden_tag() }}
+        <div>{{ form.login.label(style="color:red; background-color: #ffffff; font-size:28px") }}</div>
+        <div>
+            {{ form.login(style="width:40%;font-size:28px") }}
+        </div>
+        <div>
+            {{ form.button(style="margin-top:10px") }}
+        </div>
+    </form>
+</div>
+</body>
+</html>
